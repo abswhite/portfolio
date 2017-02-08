@@ -1,4 +1,8 @@
 #site-heading {
+  font-size: 40px;
+}
+
+#site-subheading {
   font-size: 24px;
 }
 
@@ -15,6 +19,13 @@ body {
   padding: 2px 2px;
   margin-right: 3px;
   font-size: 16px;
+}
+
+nav ul {
+  display: none;
+}
+
+nav:hover ul {
   display: block;
 }
 
