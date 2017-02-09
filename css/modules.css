@@ -3,6 +3,9 @@
   font-family: 'Homemade Apple';
 }
 
+.template {
+  display: none;
+}
 #site-subheading {
   font-size: 24px;
   font-family: 'Open Sans Condensed';
