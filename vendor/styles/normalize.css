@@ -2,6 +2,13 @@
   content: "\2630";
 
 }
+.icon-earth:before {
+  content: "\1f30f";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 

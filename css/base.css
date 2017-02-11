@@ -18,6 +18,11 @@ hr {
   width: 80%;
 }
 
+h1{
+  font-family: 'Megrim';
+  color: #F2473F;
+}
+
 p {
   font-size: 1em;
 }
