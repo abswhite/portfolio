@@ -31,3 +31,10 @@ rawProjects.forEach(function(articleObject) {
 projectsArray.forEach(function(a) {
   $('#projects').append(a.toHtml());
 });
+
+
+$(window).on('hashchange', function(){
+  var hash = window.location.hash.substring(1); // hash part of url withou the first letter (#)
+  $('section').hide();
+  $('#'+hash).show();
+});
