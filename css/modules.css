@@ -84,4 +84,14 @@ nav li {
     margin-left: auto;
     margin-right: auto;
   }
+  /*#top-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+  }
+  #about {
+    margin-top: 150px;
+  }*/
 }
