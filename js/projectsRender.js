@@ -10,23 +10,21 @@ function Projects (opts) {
   this.siteUrl = opts.siteUrl;
 }
 
-
-
 Projects.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
-  $newProject.removeClass('template');
+  // var $newProject = $('article.template').clone();
+  // $newProject.removeClass('template');
 
-  var source = $('.template').html();
-  // var templateRender = Handlebars.compile(source);
-  // return templateRender(this);
-
-  $newProject.find('a').html(this.title);
-  $newProject.find('h4').html(this.description);
-  $newProject.find('img').attr('src',this.imgUrl);
-  $newProject.find('a').attr('href', this.siteUrl);
-
-  $newProject.append('<hr>');
-  return $newProject;
+  var source = $('#article-template').html();
+  var templateRender = Handlebars.compile(source);
+  return templateRender(this);
+  //
+  // $newProject.find('a').html(this.title);
+  // $newProject.find('h4').html(this.description);
+  // $newProject.find('img').attr('src',this.imgUrl);
+  // $newProject.find('a').attr('href', this.siteUrl);
+  //
+  // $newProject.append('<hr>');
+  // return $newProject;
 };
 
 rawProjects.forEach(function(articleObject) {
@@ -45,7 +43,7 @@ $(window).on('hashchange', function(){
   $('#site-subheading').hide();
 });
 
-
+//
 // function navigation() {
 //   $('main').eq(0).show();
 //   $('#home').on('click', 'a', function() {

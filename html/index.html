@@ -11,7 +11,16 @@
     <link rel="stylesheet" href="/css/layout.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Megrim|Homemade+Apple|Open+Sans+Condensed:300" rel="stylesheet">
     <title>Abigail White Portfolio</title>
+
+    <script id="article-template" type="text/x-handlebars-template">
+      <article>
+        <h2><a href="">{{title}}</a></h2>
+        {{{description}}}
+        <img src="{{imgUrl}}" />
+      </article>
+    </script>
   </head>
+
   <body>
     <nav class="nav">
       <span class="icon-menu3"></span>
@@ -45,17 +54,18 @@
           <p>She is planning on studying Full-Stack Javascript in April and is pursuing a job in web development upon graduation.</p>
           <h2>Education</h2>
           <p>Bentley University 2013-2016</p>
-          <p>The London School od Economics 2015-2016</p>
+          <p>The London School of Economics 2015-2016</p>
 
         </section>
 
         <section id="projects">
           <h1>Projects</h1>
-          <article class="template">
+          <!-- <section id="projects"> -->
+          <!-- <article class="template">
             <h2><a href="">Title</a></h2>
             <h4>Description</h4>
-            <img src="" />
-          </article>
+            <img src="" /> -->
+          <!-- </article> -->
         </section>
 
 
@@ -72,6 +82,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="/js/projectsData.js"></script>
     <script src="/js/projectsRender.js"></script>
 
