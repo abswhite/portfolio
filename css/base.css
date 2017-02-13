@@ -25,6 +25,11 @@ h1{
   color: #F2473F;
 }
 
+ul {
+  list-style:none;
+  padding-left:0;
+}
+
 p {
   font-size: 1em;
 }
@@ -41,7 +46,7 @@ a:hover{
   text-decoration: line-through;
 }
 
-a:hover, a:focus {
+a:hover{
   color: #FA8072;
 }
 
