@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="/css/modules.css">
     <link rel="stylesheet" href="/css/icons.css">
     <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/img-styling.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Megrim|Homemade+Apple|Open+Sans+Condensed:300" rel="stylesheet">
     <title>Abigail White Portfolio</title>
 
     <script id="article-template" type="text/x-handlebars-template">
       <article>
-        <h2><a href="">{{title}}</a></h2>
+        <h2><a href="{{repoUrl}}">{{title}}</a></h2>
         {{{description}}}
-        <img src="{{imgUrl}}" />
+        <a href="{{siteUrl}}"><img src="{{imgUrl}}" class="proj-img"/></a>
       </article>
     </script>
   </head>
@@ -27,50 +28,92 @@
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
+          <ul>
+            <li><a href="about-personal">Goals</a></li>
+            <li><a href="about-education">Education</a></li>
+          </ul>
         <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
 
+    <div id="top-menu">
     <h1 id="site-heading">Abigail White</h1>
 
     <nav class="nav-long">
       <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
+        <li class="home-nav"><a href="#home">HOME</a></li>
+        <li><a href="#about" id="about-nav">ABOUT</a></li>
+        <div id="dropdown">
+          <ul>
+            <li><a href="about-personal">Goals</a></li>
+            <li><a href="about-education">Education</a></li>
+          </ul>
+        </div>
         <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
+  </div>
 
     <hr>
 
     <main id="main">
-      <h2 id="site-subheading">Web Developer/ Winged-Eyeliner Guru</h2>
 
-      <section id="about">
-        <h1>About</h1>
-          <p>Abigail is a 22 year-old student at Code Fellows</p>
-          <p>She is planning on studying Full-Stack Javascript in April and is pursuing a job in web development upon graduation.</p>
-          <h2>Education</h2>
-          <p>Bentley University 2013-2016</p>
-          <p>The London School of Economics 2015-2016</p>
+      <section id="about" class="page">
+        <section id="about-personal">
+          <h1>About</h1>
+            <p>Abigail is a 22 year-old student at Code Fellows</p>
+            <p>She is planning on studying Full-Stack Javascript in April and is pursuing a job in web development upon graduation.</p>
+          </section>
+          <img src="../images/abs-pic-1.PNG" id="main-img"/>
+          <section id="about-education">
+            <h2>Education</h2>
+            <p>Bentley University 2013-2016</p>
+              <p><i>Major: Managerial Economics</i></p>
+              <p><i>Concentration in Law; Minor in Global Studies</i></p>
+            <p>The London School of Economics 2015-2016</p>
+            <p><i>General Course Programme: Dept of Economic History</i></p>
+            <p>Code Fellows 2017 </p>
+            <p><i>201, 301, 401 Full-Stack JS</i></p>
+        </section>
+
+          <div id="gallery">
+            <img src="../images/IMG_2953.jpg" class="gallery-img"/>
+            <img src="../images/IMG_2953.jpg" class="gallery-img"/>
+            <img src="../images/IMG_2953.jpg" class="gallery-img"/>
+            <img src="../images/IMG_2953.jpg" class="gallery-img"/>
+          </div>
+
 
         </section>
 
-        <section id="projects">
+        <section id="projects" class="page">
           <h1>Projects</h1>
-          <!-- <section id="projects"> -->
-          <!-- <article class="template">
-            <h2><a href="">Title</a></h2>
-            <h4>Description</h4>
-            <img src="" /> -->
-          <!-- </article> -->
         </section>
 
-
-      <section id="contact">
+      <section id="contact" class="page">
         <h1>Contact</h1>
+
+        <form id="form" action="#" method="post">
+          <div class="form">
+              <label for="name">Name</label><br>
+              <input type="text" id="name" name="input_name">
+          </div>
+          <div class="form">
+              <label for="email">Email</label><br>
+              <input type="email" id="email" name="input-email">
+          </div>
+          <div class="form">
+              <label for="message">What's Up?</label><br>
+              <textarea id="message" name="input_message"></textarea>
+          </div>
+          <div class="button form">
+              <button type="submit">Send your message</button><br>
+          </div>
+        </form>
+
+
         <a href="http://www.github.com/abswhite1"><img src="../images/GitHub-Mark-64px.png" class="github-img"/></a>
         <a href="mailto:abigailwhite213@gmail.com"><img src="../images/envelope.png" class="font"/></a>
         <a href="http://www.abigailwhitewrites.wordpress.com"><img src="../images/grid-world.png" class="font"/></a>
@@ -79,6 +122,8 @@
     </main>
 
     <footer>
+      <hr>
+      <p>All Rights Reserved. Copyright 2017 Abigail White</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

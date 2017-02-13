@@ -39,12 +39,44 @@
   }
 }
 
-img {
-  width: 200px;
-  height: auto;
+form {
+  margin-bottom: 40px;
+  font-size: 16px;
 }
 
-.github-img {
-  width: 24px;
-  height: auto;
+.form {
+  margin-bottom: 8px;
+}
+
+#name, #email, #message {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+
+}
+
+#message:hover, #name:hover, #email:hover {
+  background-color: #EEE5DE;
+  color: white;
+}
+
+button {
+  background-color: #FA8072;
+  width: 100px;
+  font-family: 'Open Sans Condensed';
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
