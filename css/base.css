@@ -9,6 +9,8 @@ body {
   color: #313131;
   background-color: white;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
   }
 
 }
@@ -31,14 +33,22 @@ address {
   display: inline-block;
 }
 
-a, a:link, a:active {
+a, a:link {
   text-decoration: none;
   color: #777;
+}
+a:hover{
+  text-decoration: line-through;
 }
 
 a:hover, a:focus {
   color: #FA8072;
 }
 
-a:visited {
+a:active {
+  font-weight: bold;
+}
+
+i {
+  color: grey;
 }

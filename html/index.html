@@ -14,9 +14,9 @@
 
     <script id="article-template" type="text/x-handlebars-template">
       <article>
-        <h2><a href="">{{title}}</a></h2>
+        <h2><a href="{{repoUrl}}">{{title}}</a></h2>
         {{{description}}}
-        <img src="{{imgUrl}}" />
+        <a href="{{siteUrl}}"><img src="{{imgUrl}}" class="proj-img"/></a>
       </article>
     </script>
   </head>
@@ -36,7 +36,7 @@
 
     <nav class="nav-long">
       <ul>
-        <li><a href="#home">HOME</a></li>
+        <li class="home-nav"><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -46,30 +46,30 @@
     <hr>
 
     <main id="main">
-      <h2 id="site-subheading">Web Developer/ Winged-Eyeliner Guru</h2>
-
-      <section id="about">
+      
+      <section id="about" class="page">
         <h1>About</h1>
           <p>Abigail is a 22 year-old student at Code Fellows</p>
           <p>She is planning on studying Full-Stack Javascript in April and is pursuing a job in web development upon graduation.</p>
+          <img src="../images/abs-pic-1.PNG" id="main-img"/>
           <h2>Education</h2>
           <p>Bentley University 2013-2016</p>
+            <p><i>Major: Managerial Economics</i></p>
+            <p><i>Concentration in Law; Minor in Global Studies</i></p>
           <p>The London School of Economics 2015-2016</p>
+          <p><i>General Course Programme: Dept of Economic History</i></p>
+          <p>Code Fellows 2017 </p>
+          <p><i>201, 301, 401 Full-Stack JS</i></p>
+
 
         </section>
 
-        <section id="projects">
+        <section id="projects" class="page">
           <h1>Projects</h1>
-          <!-- <section id="projects"> -->
-          <!-- <article class="template">
-            <h2><a href="">Title</a></h2>
-            <h4>Description</h4>
-            <img src="" /> -->
-          <!-- </article> -->
         </section>
 
 
-      <section id="contact">
+      <section id="contact" class="page">
         <h1>Contact</h1>
         <a href="http://www.github.com/abswhite1"><img src="../images/GitHub-Mark-64px.png" class="github-img"/></a>
         <a href="mailto:abigailwhite213@gmail.com"><img src="../images/envelope.png" class="font"/></a>
@@ -79,6 +79,8 @@
     </main>
 
     <footer>
+      <hr>
+      <p>All Rights Reserved. Copyright 2017 Abigail White</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

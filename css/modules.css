@@ -65,4 +65,9 @@ nav li {
   .nav-long li {
     display: inline-block;
   }
+  body {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

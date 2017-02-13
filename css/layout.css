@@ -39,12 +39,18 @@
   }
 }
 
-img {
-  width: 200px;
+.proj-img {
+  width: 300px;
   height: auto;
+  border: 2px solid lightgrey;
 }
 
 .github-img {
   width: 24px;
+  height: auto;
+}
+
+#main-img {
+  width: 500px;
   height: auto;
 }
