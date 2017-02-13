@@ -31,3 +31,19 @@ rawProjects.forEach(function(articleObject) {
 projectsArray.forEach(function(a) {
   $('#projects').append(a.toHtml());
 });
+
+
+$(window).on('hashchange', function(){
+  var hash = window.location.hash.substring(1);
+  $('section').hide();
+  $('#'+hash).show();
+  $('#site-subheading').hide();
+});
+
+// function navigation() {
+//   $('main').eq(0).show();
+//   $('#home').on('click', 'a', function() {
+//     $($(this).attr('href')).show().siblings('section:visible').hide();
+//   });
+// }
+// navigation();

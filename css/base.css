@@ -7,7 +7,8 @@ body {
   font-size: 100%;
   font-family: 'Open Sans Condensed';
   color: #313131;
-  background-color: #FFFFCC;
+  background-color: white;
+  text-align: center;
   }
 
 }
@@ -15,6 +16,11 @@ body {
 hr {
   margin: 1em;
   width: 80%;
+}
+
+h1{
+  font-family: 'Megrim';
+  color: #F2473F;
 }
 
 p {
@@ -31,7 +37,7 @@ a, a:link, a:active {
 }
 
 a:hover, a:focus {
-  color: #29506D;
+  color: #FA8072;
 }
 
 a:visited {
