@@ -10,9 +10,15 @@ function Projects (opts) {
   this.siteUrl = opts.siteUrl;
 }
 
+
+
 Projects.prototype.toHtml = function() {
   var $newProject = $('article.template').clone();
   $newProject.removeClass('template');
+
+  var source = $('.template').html();
+  // var templateRender = Handlebars.compile(source);
+  // return templateRender(this);
 
   $newProject.find('a').html(this.title);
   $newProject.find('h4').html(this.description);
@@ -32,13 +38,13 @@ projectsArray.forEach(function(a) {
   $('#projects').append(a.toHtml());
 });
 
-
 $(window).on('hashchange', function(){
   var hash = window.location.hash.substring(1);
   $('section').hide();
   $('#'+hash).show();
   $('#site-subheading').hide();
 });
+
 
 // function navigation() {
 //   $('main').eq(0).show();
