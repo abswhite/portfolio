@@ -20,7 +20,7 @@ function Projects (opts) {
 Projects.all = [];
 
 Projects.prototype.toHtml = function() {
-  let template = Handlebars.compile($('#article-template')).text();
+  let template = Handlebars.compile($('#article-template').text());
   return template(this);
 };
 
