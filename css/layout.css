@@ -59,7 +59,7 @@ form {
 
 #message:hover, #name:hover, #email:hover {
   background-color: #EEE5DE;
-  color: white;
+  color: black;
 }
 
 button {
