@@ -80,3 +80,26 @@ button:hover {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+.welcome {
+  width: 150px;
+  height: 50px;
+  /*background-color: green;*/
+  /*float: left;*/
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: darkgrey;
+  text-align: center;
+}
+
+#home {
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+#footer {
+  height: 50px;
+  margin-top: 27px;
+}
