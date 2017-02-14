@@ -1,3 +1,7 @@
+#about, #projects, #contact {
+  display: none;
+}
+
 #site-heading {
   font-size: 40px;
   font-family: 'Megrim';
@@ -84,14 +88,9 @@ nav li {
     margin-left: auto;
     margin-right: auto;
   }
-  /*#top-menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color: white;
+  footer {
+    height: 50px;
+    margin-top: 500px;
+    margin-bottom: 0px;
   }
-  #about {
-    margin-top: 150px;
-  }*/
 }

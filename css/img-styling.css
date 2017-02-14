@@ -2,6 +2,7 @@
   width: 300px;
   height: auto;
   border: 2px solid lightgrey;
+  border-radius: 6px;
 }
 
 .github-img {
@@ -16,4 +17,8 @@
 
 .gallery-img {
   width: 300px;
+}
+
+.proj-img:hover {
+  border: 7px solid #FA8072;
 }
