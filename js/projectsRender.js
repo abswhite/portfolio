@@ -45,7 +45,7 @@ Projects.fetchAll = function() {
     Projects.loadAll(JSON.parse(localStorage.projectsData));
     projectView.projectsRender();
   } else {
-    $.getJSON('/data/projectsJSON.json')
+    $.getJSON('/public/data/projectsJSON.json')
     .then(function(projectsData) {
       Projects.loadAll(projectsData);
       localStorage.setItem('projectsData', JSON.stringify(projectsData));
