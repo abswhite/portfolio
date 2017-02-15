@@ -20,9 +20,13 @@ hr {
   width: 80%;
 }
 
-h1{
+h1 {
   font-family: 'Megrim';
   color: #F2473F;
+}
+
+h2 {
+  clear: both;
 }
 
 ul {
