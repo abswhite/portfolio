@@ -20,6 +20,7 @@
         <h4>Website Link: <a href="{{siteUrl}}">{{siteUrl}}</a></h4>
         {{{description}}}
         <a href="{{siteUrl}}"><img src="{{imgUrl}}" class="proj-img"/></a>
+        <br>
       </article>
     </script>
   </head>
@@ -30,10 +31,6 @@
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
-          <ul>
-            <li><a href="about-personal">Goals</a></li>
-            <li><a href="about-education">Education</a></li>
-          </ul>
         <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
@@ -46,12 +43,6 @@
       <ul>
         <li class="home-nav"><a href="#home">HOME</a></li>
         <li><a href="#about" id="about-nav">ABOUT</a></li>
-        <div id="dropdown">
-          <ul>
-            <li><a href="about-personal">Goals</a></li>
-            <li><a href="about-education">Education</a></li>
-          </ul>
-        </div>
         <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
@@ -63,18 +54,24 @@
     <main id="main">
 
     <section id="home" class="clearfix page">
-      <div class="welcome">
-        <img src="http://static.tumblr.com/859f37c479db05eb1e547f447d5a9a33/y7ztg4r/XG0oer1mp/tumblr_static_enudhwzsazcckwgwsogcg408o.png"/>
-        <h2>About</h2>
-      </div>
-      <div class="welcome">
-        <img src="https://s-media-cache-ak0.pinimg.com/736x/15/1e/02/151e0248f6cae03f79a46599473a4fa6.jpg"/>
-        <h2>Projects</h2>
-      </div>
-      <div class="welcome">
-        <img src="https://31.media.tumblr.com/2d863c8724195f8e7878435d1cafc8f5/tumblr_mt11pruoGj1sfhfhuo1_500.png"/>
-        <h2>Contact</h2>
-      </div>
+      <a href="#about">
+        <div class="welcome">
+          <img src="http://static.tumblr.com/859f37c479db05eb1e547f447d5a9a33/y7ztg4r/XG0oer1mp/tumblr_static_enudhwzsazcckwgwsogcg408o.png"/>
+          <h2>About</h2>
+        </div>
+      </a>
+      <a href="#projects">
+        <div class="welcome">
+          <img src="https://s-media-cache-ak0.pinimg.com/736x/15/1e/02/151e0248f6cae03f79a46599473a4fa6.jpg"/>
+          <h2>Projects</h2>
+        </div>
+      </a>
+      <a href="#contact">
+        <div class="welcome">
+          <img src="https://31.media.tumblr.com/2d863c8724195f8e7878435d1cafc8f5/tumblr_mt11pruoGj1sfhfhuo1_500.png"/>
+          <h2>Contact</h2>
+        </div>
+      </a>
     </section>
 
       <section id="about" class="page">
@@ -84,21 +81,29 @@
             <p>She is planning on studying Full-Stack Javascript in April and is pursuing a job in web development upon graduation.</p>
           </section>
           <img src="../images/abs-pic-1.PNG" id="main-img"/>
+          <h2>Education</h2>
           <section id="about-education">
-            <h2>Education</h2>
-            <p>Bentley University 2013-2016</p>
-              <p><i>Major: B.S. Managerial Economics</i></p>
-              <p><i>Concentration in Law; Minor in Global Studies</i></p>
-            <p>The London School of Economics 2015-2016</p>
-            <p><i>General Course Programme: Dept of Economic History</i></p>
-            <p>Code Fellows 2017 </p>
-            <p><i>201, 301, 401 Full-Stack JS</i></p>
+            <div class="educ-layout">
+              <h3>Bentley University 2013-2016</h3>
+                <p>Major: B.S. Managerial Economics</p>
+                <p>Concentration in Law; Minor in Global Studies</p>
+            </div>
+            <div class="educ-layout">
+              <h3>The London School of Economics 2015-2016</h3>
+              <p>General Course Programme: Dept of Economic History</p>
+              <p>Awarded Firsts in Environmental Economics and Information Technology and the Law</p>
+            </div>
+            <div class="educ-layout clearfix last">
+              <h3>Code Fellows 2017 </h3>
+              <p>201, 301, 401 Full-Stack JS</p>
+            </div>
         </section>
 
+          <h2>Gallery</h2>
           <div id="gallery">
             <img src="../images/IMG_2953.jpg" class="gallery-img"/>
-            <img src="../images/IMG_2953.jpg" class="gallery-img"/>
-            <img src="../images/IMG_2953.jpg" class="gallery-img"/>
+            <img src="http://claudettenyc.com/wp-content/uploads/2016/05/tumblr_static_2pl1nombh3i8gsggsscow8sow-1.jpg" class="gallery-img"/>
+            <img src="http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/07/white-background-2.jpg" id="gallery-3" class="gallery-img"/>
             <img src="../images/IMG_2953.jpg" class="gallery-img"/>
           </div>
 
