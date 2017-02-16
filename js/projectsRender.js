@@ -54,25 +54,3 @@ Projects.fetchAll = function() {
     })
   }
 };
-
-  // dataType: 'json',
-  // method: 'GET',
-  // url: 'data/projectsJSON.json',
-  // success: function(data) {
-  //   localStorage.setItem('projectsData', JSON.stringify(data));
-  //   Projects.loadAll(data);
-  //   projectsRender();
-  //   console.log('here');
-
-//   var source = $('#article-template').html();
-//   var templateRender = Handlebars.compile(source);
-//   return templateRender(this);
-// };
-//
-// rawProjects.forEach(function(articleObject) {
-//   projectsArray.push(new Projects(articleObject));
-// });
-//
-// projectsArray.forEach(function(a) {
-//   $('#projects').append(a.toHtml());
-// });

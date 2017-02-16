@@ -67,6 +67,11 @@ nav li {
   display: none;
 }
 
+.gallery {
+  clear: both;
+  }
+
+
 @media only screen and (min-width: 640px) {
   .icon-menu3 {
     display: none;
@@ -101,10 +106,14 @@ nav li {
     margin-bottom: 15px;
     padding: 0;
   }
-  #gallery-3 {
-    width: 300px;
-    height: 225px;
-    border-radius: 6px;
-    border: 0px solid white;
-    }
 }
+/*
+@media (max-width:640px){
+    .left {
+       width: 800px;
+       background-color: red;
+    }
+
+    .containerRight {
+       display: none;
+    }*/
