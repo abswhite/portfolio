@@ -54,6 +54,7 @@ form {
   margin-right: auto;
   border: 1px solid lightgrey;
   border-radius: 6px;
+  padding: 6px;
 
 }
 
@@ -108,7 +109,7 @@ button:hover {
 
 .educ-layout {
   width: 300px;;
-  height: 150px;
+  height: 200px;
   display: inline-block;
   margin-top: 0;
   margin-bottom: 5px;
@@ -116,10 +117,50 @@ button:hover {
   padding-top: 0px;
 }
 
-.educ-layout h3 {
-    padding-top: 0px;
+.educ-layout h5 {
+  color: #C65D57;
+  margin-top: 2px;
+  font-size: 16px;
 }
 
+.educ-layout h3 {
+    padding-top: 0px;
+    margin-bottom: 2px;
+    font-size: 23px;
+}
+
+.educ-layout i {
+  color: black;
+}
 .last {
   margin-bottom: 20px;
+}
+
+.other-layout {
+  text-align: left;
+  width: auto;
+  height: auto;
+  display: block;
+  margin-top: 0;
+  margin-left: 10%;
+  margin-bottom: 5px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.other-layout p {
+  display: inline;
+}
+
+.other-layout h5 {
+  color: #C65D57;
+  margin-top: 2px;
+  font-size: 16px;
+  display: inline;
+}
+
+.other-layout h3 {
+    padding-top: 0px;
+    margin-bottom: 2px;
+    font-size: 23px;
 }
