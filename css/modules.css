@@ -107,8 +107,8 @@ nav li {
     padding: 0;
   }
 }
-
-/*@media (max-width:500px){
+/*
+@media (max-width:640px){
     .left {
        width: 800px;
        background-color: red;
