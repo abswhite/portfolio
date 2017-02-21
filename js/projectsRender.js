@@ -1,5 +1,6 @@
 'use strict';
-// (function(module){
+(function(module) {
+
   $(window).on('hashchange', function(){
     console.log('Hash changed: ' + location.hash);
     var hash = window.location.hash.substring(1)
@@ -68,5 +69,6 @@
     console.log('here in allTitles');
     $('#projectTitle').append(Projects.allTitles());
   };
-//   module.projectRender = projectRender;
-// }) (window);
+
+  module.Projects = Projects;
+}) (window);
