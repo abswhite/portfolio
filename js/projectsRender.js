@@ -1,6 +1,6 @@
 'use strict';
 (function(module) {
-
+//Refactor code below in order to make server-side routes, in addition to the client-side routes
   $(window).on('hashchange', function(){
     console.log('Hash changed: ' + location.hash);
     var hash = window.location.hash.substring(1)
