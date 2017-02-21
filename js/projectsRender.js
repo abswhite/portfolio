@@ -32,6 +32,17 @@ Projects.loadAll = function(projectsData) {
   console.log(Projects.all);
 }
 
+Projects.allTitles = () => {
+  return Projects.all.map(function(el){
+    console.log('in all titles');
+    return el.title.split(' ').length;
+  })
+  .reduce(function(all, current) {
+    console.log('in all REDUCE');
+    return all + current;
+  })
+};
+
 projectView.projectsRender = function() {
   console.log('render function called');
   Projects.all.forEach(function(a) {
@@ -53,4 +64,7 @@ Projects.fetchAll = function() {
       console.log('here in else');
     })
   }
+  Projects.allTitles();
+  console.log('here in allTitles');
+  $('#projectTitle').append(Projects.allTitles());
 };
