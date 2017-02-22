@@ -5,8 +5,10 @@
 
   homeController.init = function() {
     console.log('home controller running');
-    $('#main').hide();
     $('#home').show();
+    $('#about').hide();
+    $('#projects').hide();
+    $('#contact').hide();
   };
 
   module.homeController = homeController;

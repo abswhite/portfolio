@@ -5,10 +5,12 @@
 
   contactController.init = function() {
     console.log('contact controller running');
-    // Projects.fetchAll(projectView.initIndexPage);
-    $('#main').hide();
     $('#contact').show();
-  }
+    $('#home').hide();
+    $('#about').hide();
+    $('#projects').hide();
+
+  };
 
   module.contactController = contactController;
 })(window);

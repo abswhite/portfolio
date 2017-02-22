@@ -8,6 +8,7 @@ const conString = 'postgres://localhost:5432';
 app.get('/', (request, response) => response.sendFile('index.html', {root: '.'}));
 app.get('/projects', (request, response) => response.sendFile('index.html', {root: '.'}));
 app.get('/about', (request, response) => response.sendFile('index.html', {root: '.'}));
+app.get('/contact', (request, response) => response.sendFile('index.html', {root: '.'}));
 
 
 app.use(express.static('./'));

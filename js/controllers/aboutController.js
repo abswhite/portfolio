@@ -5,9 +5,11 @@
 
   aboutController.init = function() {
     console.log('about controller running');
-    $('#main').hide();
     $('#about').show();
-  }
+    $('#home').hide();
+    $('#projects').hide();
+    $('#contact').hide();
+  };
 
   module.aboutController = aboutController;
 })(window);
