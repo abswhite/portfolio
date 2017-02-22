@@ -1,12 +1,12 @@
 'use strict';
 (function(module) {
 //Refactor code below in order to make server-side routes, in addition to the client-side routes
-  $(window).on('hashchange', function(){
-    console.log('Hash changed: ' + location.hash);
-    var hash = window.location.hash.substring(1)
-    $('.page').hide();
-    $('#'+ hash).show();
-  });
+  // $(window).on('hashchange', function(){
+  //   console.log('Hash changed: ' + location.hash);
+  //   var hash = window.location.hash.substring(1)
+  //   $('.page').hide();
+  //   $('#'+ hash).show();
+  // });
 
   let projectView = {};
 
@@ -26,20 +26,16 @@
   };
 
   Projects.loadAll = function(projectsData) {
-    console.log('load All');
     projectsData.forEach(function(ele) {
       Projects.all.push(new Projects(ele));
     });
-    console.log(Projects.all);
   }
 
   Projects.allTitles = () => {
     return Projects.all.map(function(el){
-      console.log('in all titles');
       return el.title.split(' ').length;
     })
     .reduce(function(all, current) {
-      console.log('in all REDUCE');
       return all + current;
     })
   };
@@ -51,24 +47,33 @@
     });
   };
 
-
-  Projects.fetchAll = function() {
+  Projects.fetchAll = function(callback) {
     if (localStorage.projectsData) {
       Projects.loadAll(JSON.parse(localStorage.projectsData));
       projectView.projectsRender();
+      console.log('fetchall 2')
     } else {
       $.getJSON('/data/projectsJSON.json')
       .then(function(projectsData) {
         Projects.loadAll(projectsData);
         localStorage.setItem('projectsData', JSON.stringify(projectsData));
         projectView.projectsRender();
-        console.log('here in else');
+        console.log('fetchall 2');
+      })
+      .then(function() {
+        if (callback)
+          callback();
       })
     }
+    //Refactor to use .reduce() and .map() in a more meaningful way
     Projects.allTitles();
-    console.log('here in allTitles');
     $('#projectTitle').append(Projects.allTitles());
   };
+
+  // projectView.initIndexPage = function() {
+  //   Projects.fetchAll();
+  //   Projects.allTitles();
+  // };
 
   module.Projects = Projects;
 }) (window);
