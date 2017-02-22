@@ -29,10 +29,10 @@
     <nav class="nav">
       <span class="icon-menu3"></span>
       <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/projects">PROJECTS</a></li>
+        <li><a href="/contact">CONTACT</a></li>
       </ul>
     </nav>
 
@@ -41,10 +41,10 @@
 
     <nav class="nav-long">
       <ul>
-        <li class="home-nav"><a href="#home">HOME</a></li>
-        <li><a href="#about" id="about-nav">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li class="home-nav"><a href="/">HOME</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/projects">PROJECTS</a></li>
+        <li><a href="/contact">CONTACT</a></li>
       </ul>
     </nav>
   </div>
@@ -54,19 +54,19 @@
     <main id="main">
 
     <section id="home" class="clearfix page">
-      <a href="#about">
+      <a href="/about">
         <div class="welcome">
           <img src="http://static.tumblr.com/859f37c479db05eb1e547f447d5a9a33/y7ztg4r/XG0oer1mp/tumblr_static_enudhwzsazcckwgwsogcg408o.png"/>
           <h2>About</h2>
         </div>
       </a>
-      <a href="#projects">
+      <a href="/projects">
         <div class="welcome">
           <img src="https://s-media-cache-ak0.pinimg.com/736x/15/1e/02/151e0248f6cae03f79a46599473a4fa6.jpg"/>
           <h2>Projects</h2>
         </div>
       </a>
-      <a href="#contact">
+      <a href="/contact">
         <div class="welcome">
           <img src="https://31.media.tumblr.com/2d863c8724195f8e7878435d1cafc8f5/tumblr_mt11pruoGj1sfhfhuo1_500.png"/>
           <h2>Contact</h2>
@@ -147,8 +147,10 @@
 
         <section id="projects" class="page">
           <h1>Projects</h1>
+          <h2 id="projectTitle">The Total Words in Projects' Titles: </h2>
         </section>
 
+<!-- Refactor  to make contact form deliver an email to my inbox-->
       <section id="contact" class="page">
         <h1>Contact</h1>
 
@@ -182,9 +184,16 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-    <!-- <script src="/js/projectsData.js"></script> -->
-    <script src="/js/projectsRender.js"></script>
+    <script src="/js/models/projectsRender.js"></script>
+    <script src="/js/controllers/homeController.js"></script>
+
+    <script src="/js/controllers/aboutController.js"></script>
+    <script src="/js/controllers/projectsController.js"></script>
+    <script src="js/controllers/contactController.js"></script>
+
+    <script src="/js/controllers/routes.js"></script>
     <script>
       Projects.fetchAll();
     </script>
