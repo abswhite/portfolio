@@ -19,7 +19,7 @@
         <h4>Repository Link: <a href="{{repoUrl}}">{{repoUrl}}</a></h4>
         <h4>Website Link: <a href="{{siteUrl}}">{{siteUrl}}</a></h4>
         {{{description}}}
-        <a href="{{siteUrl}}"><img src="{{imgUrl}}" class="proj-img"/></a>
+        <img src="{{imgUrl}}" class="proj-img"/>
         <br>
       </article>
     </script>
@@ -32,6 +32,7 @@
     <p>Created: {{created_at}}</p>
     <p>Last updated: {{updated_at}}</p>
   </li>
+  <div class="line">____________________</div>
 </script>
 
   </head>
@@ -152,12 +153,12 @@
         </section>
 
         <section id="projects" class="page">
-          <h1>Projects</h1>
+          <h1>Featured Projects</h1>
           <h2 id="projectTitle">The Total Words in Projects' Titles: </h2>
-          <ul>
-            <li>Sample List Item</li>
-          </ul>
+          <div></div>
           <hr>
+          <h1>All Repositories</h1>
+          <ul></ul>
         </section>
 
 <!-- Refactor  to make contact form deliver an email to my inbox-->
@@ -208,7 +209,6 @@
     <script src="/js/controllers/routes.js"></script>
     <script>
       Projects.fetchAll();
-      // repos.requestRepos();
     </script>
 
   </body>

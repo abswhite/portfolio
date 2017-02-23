@@ -43,7 +43,7 @@
   projectView.projectsRender = function() {
     console.log('render function called');
     Projects.all.forEach(function(a) {
-      $('#projects').append(a.toHtml());
+      $('#projects div').append(a.toHtml());
     });
   };
 

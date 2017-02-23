@@ -23,9 +23,9 @@
   border: 0px solid white;
 }
 
-.proj-img:hover {
+/*.proj-img:hover {
   border: 2px solid #FA8072;
-}
+}*/
 
 .welcome h2:hover {
   text-decoration: line-through;
