@@ -31,9 +31,6 @@
     <p>Language: {{language}}</p>
     <p>Created: {{created_at}}</p>
     <p>Last updated: {{updated_at}}</p>
-    {{#if watchers_count}}
-      <p>{{watchers_count}} watching this repo</p>
-    {{/if}}
   </li>
 </script>
 
@@ -152,18 +149,15 @@
               <li><h5>Boston, Seattle, London</li>
           </div>
         </section>
-<!--
-          <div class="gallery">
-            <!-- <img src="../images/IMG_2953.jpg" class="gallery-img"/> -->
-            <!-- <img src="http://claudettenyc.com/wp-content/uploads/2016/05/tumblr_static_2pl1nombh3i8gsggsscow8sow-1.jpg" class="gallery-img"/>
-          </div> -->
         </section>
 
         <section id="projects" class="page">
           <h1>Projects</h1>
           <h2 id="projectTitle">The Total Words in Projects' Titles: </h2>
           <ul>
+            <li>Sample List Item</li>
           </ul>
+          <hr>
         </section>
 
 <!-- Refactor  to make contact form deliver an email to my inbox-->
@@ -204,17 +198,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="/js/models/projectsRender.js"></script>
     <script src="/js/controllers/homeController.js"></script>
-
+    <script src="/js/models/githubToken.js"></script>
+    <script src="/js/models/repos.js"></script>
+    <script src="/js/views/reposView.js"></script>
     <script src="/js/controllers/aboutController.js"></script>
     <script src="/js/controllers/projectsController.js"></script>
     <script src="js/controllers/contactController.js"></script>
-    <script src="/js/views/reposView.js"></script>
-
-    <script src="/js/models/repos.js"></script>
 
     <script src="/js/controllers/routes.js"></script>
     <script>
       Projects.fetchAll();
+      // repos.requestRepos();
     </script>
 
   </body>

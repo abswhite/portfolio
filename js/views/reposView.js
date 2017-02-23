@@ -5,7 +5,7 @@ console.log('inside repos VIEW page');
 
   const projEmpty = function() {
     let $projects = $('#projects');
-    console.log('inside repos VIEW ui function');
+    console.log('inside repos VIEW projEmpty function');
 
     $projects.find('ul').empty();
     $projects.show().siblings().hide();

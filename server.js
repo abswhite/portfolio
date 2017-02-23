@@ -29,5 +29,5 @@ function proxyGitHub(request, response) {
 }
 
 app.listen(PORT, function() {
-  console.log('server is serving app on localhost:5000');
+  console.log(`server is serving app on localhost:${PORT}`);
 });
