@@ -23,6 +23,20 @@
         <br>
       </article>
     </script>
+
+    <script id="repo-template" type="text/x-handlebars-template">
+  <li>
+    <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+    <p>Description: {{description}}</p>
+    <p>Language: {{language}}</p>
+    <p>Created: {{created_at}}</p>
+    <p>Last updated: {{updated_at}}</p>
+    {{#if watchers_count}}
+      <p>{{watchers_count}} watching this repo</p>
+    {{/if}}
+  </li>
+</script>
+
   </head>
 
   <body>
@@ -148,6 +162,8 @@
         <section id="projects" class="page">
           <h1>Projects</h1>
           <h2 id="projectTitle">The Total Words in Projects' Titles: </h2>
+          <ul>
+          </ul>
         </section>
 
 <!-- Refactor  to make contact form deliver an email to my inbox-->
@@ -192,6 +208,9 @@
     <script src="/js/controllers/aboutController.js"></script>
     <script src="/js/controllers/projectsController.js"></script>
     <script src="js/controllers/contactController.js"></script>
+    <script src="/js/views/reposView.js"></script>
+
+    <script src="/js/models/repos.js"></script>
 
     <script src="/js/controllers/routes.js"></script>
     <script>

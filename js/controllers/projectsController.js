@@ -10,6 +10,8 @@
     $('#home').hide();
     $('#about').hide();
     $('#contact').hide();
+    repos.requestRepos(repoView.index);
+
   };
 
   module.projectsController = projectsController;
