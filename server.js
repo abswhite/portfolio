@@ -11,15 +11,6 @@ app.get('/projects', (request, response) => response.sendFile('index.html', {roo
 app.get('/about', (request, response) => response.sendFile('index.html', {root: '.'}));
 app.get('/contact', (request, response) => response.sendFile('index.html', {root: '.'}));
 
-
-app.use(express.static('./'));
-app.get('*', function(request, response) {
-  console.log('index.html');
-  response.sendFile('./index.html', {root: '.'});
-});
-
-app.get('/github/*', proxyGitHub);
-
 function proxyGitHub(request, response) {
   console.log('Routing GitHub request for', request.params[0]);
   (requestProxy({
@@ -27,6 +18,14 @@ function proxyGitHub(request, response) {
     headers: {Authorization: `token ${process.env.GITHUB_TOKEN}`}
   }))(request, response);
 }
+
+app.get('/github/*', proxyGitHub);
+
+app.use(express.static('./'));
+app.get('*', function(request, response) {
+  console.log('index.html');
+  response.sendFile('index.html', {root: '.'});
+});
 
 app.listen(PORT, function() {
   console.log(`server is serving app on localhost:${PORT}`);
