@@ -6,7 +6,7 @@
   repos.all = [];
 
   repos.requestRepos = function(callback) {
-    $.get('github/user/repos')
+    $.get('/github/user/repos')
     .then(data => repos.all = data,
       err => console.error(err))
       .then(callback);
