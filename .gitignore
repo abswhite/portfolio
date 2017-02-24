@@ -17,6 +17,8 @@
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
 
+# Personal Access Tokens
+/js/models/githubToken.js
 
 ### Node ###
 # Logs

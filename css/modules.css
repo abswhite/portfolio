@@ -1,6 +1,9 @@
 /*#about, #projects, #contact {
   display: none;
 }*/
+.line {
+  color: #FA8072;
+}
 
 #site-heading {
   font-size: 40px;
